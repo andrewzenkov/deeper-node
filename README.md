@@ -149,3 +149,23 @@ EventEmmiter is a special class in Node to work with events. Usually it's used a
 EventEmmiter is used when we have statement with multiple state which can be changed some times(even infinite) against a Promise which contans only 3 state and after resolving of catching it couldn't be changed. In case of EventEmmiter we use it if you can change state.
 
 Buffers is a special type of data in Node. In simple words it's a Array of single typed data with limited length.
+
+
+<h2>Node profiling. Performance investigating<h2/>
+
+ Let's create a new not js file with code:
+
+```javascript
+console.log('start');
+new Array(1000).fill(null).map(() => new Promise(res => res()).then(() => console.log('Promise resolved')));
+console.log('finish');
+
+setTimeout(() => {
+  console.log('setTimeout was triggered');
+}, 0)  
+```
+
+Command `node --prof app.js` will generate log file `isolate-0xnnnnnnnnnnnn-v8.log`.
+Application work logs can be written inside this file during some time, but this file is not so useful for us.
+Command `node --prof-process isolate-0xnnnnnnnnnnnn-v8.log > processed.txt` will generate readble for us docs with summary of application execution.
+
