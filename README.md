@@ -157,7 +157,14 @@ Buffers is a special type of data in Node. In simple words it's a Array of singl
 
 ```javascript
 console.log('start');
-new Array(1000).fill(null).map(() => new Promise(res => res()).then(() => console.log('Promise resolved')));
+
+new Array(1000)
+  .fill(null)
+  .map(() => {
+    return new Promise(res => res())
+      .then(() => console.log('Promise resolved'))
+  });
+
 console.log('finish');
 
 setTimeout(() => {
