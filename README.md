@@ -1,7 +1,3 @@
-# deeper-node
-Node on a deeper level.
-
-
 Node in a little details
 
 // In this article I will mention Node meaning NodeJS.
