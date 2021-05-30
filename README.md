@@ -151,7 +151,7 @@ EventEmmiter is used when we have statement with multiple state which can be cha
 Buffers is a special type of data in Node. In simple words it's a Array of single typed data with limited length.
 
 
-<h2>Node profiling. Performance investigating<h2/>
+<h2>Node profiling. Performance investigating</h2>
 
  Let's create a new not js file with code:
 
