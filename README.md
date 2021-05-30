@@ -1,4 +1,4 @@
-Node in a little details
+<h1>Node in a little details</h1>
 
 // In this article I will mention Node meaning NodeJS.
 
@@ -12,7 +12,9 @@ Node largely contained the C++ code, written to efficiently interact with module
 
 One of the most useful libraries inside of Node is library libuv which is written on C++ fully. The second very important component of Node is V8 engine which is used as a core engine for Google Chrome browser. It’s a necessary core of iterperatating and involving javascript code.
 
-// Event loop. // The require function executes all code inside of module as usual js code then caches it and imports that as usual variable // When event loop has no any functions for executing it shuts down, until any function is received as function for executing.
+// Event loop. <br>
+// The require function executes all code inside of module as usual js code then caches it and imports that as usual variable <br>
+// When event loop has no any functions for executing it shuts down, until any function is received as function for executing.<br>
 
 Event loop is a kind of infinite cycle. Each iteration is called 'tick'. There is analogy of the tack of CPU. But unlike tacts, the cycle of event loop can go on for long time.
 
@@ -25,7 +27,7 @@ Is the event loop structure of data and manipulation of that? Or just aproach to
 
 Node is Signle Threaded, but some Node modules are not. Some libuv functions can execute outside of Event loop of Node and be more efficient. Node has additional thread to execute some of heavy tasks.
 
-Variable process.env.UV_THREADPOOL_SIZE controls the number of threadpools which will be runned as space for execution.
+Variable `process.env.UV_THREADPOOL_SIZE` controls the number of threadpools which will be runned as space for execution.
 
 "Thread pool work scheduling libuv provides a threadpool which can be used to run user code and get notified in the loop thread. This thread pool is internally used to run all file system operations, as well as getaddrinfo and getnameinfo requests.
 
