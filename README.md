@@ -153,7 +153,7 @@ Buffers is a special type of data in Node. In simple words it's a Array of singl
 
 <h2>Node profiling. Performance investigating</h2>
 
- Let's create a new not js file with code:
+ Let's create a new js file with code:
 
 ```javascript
 console.log('start');
