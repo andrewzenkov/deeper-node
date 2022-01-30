@@ -1,8 +1,10 @@
 <h1>Node in a little details</h1>
 
-// In this article I will mention Node meaning NodeJS.
 
-Here will be described a few important Advanced Node concepts. Before getting started, let's take a look at very base introduce to understand what Node is and what the purpose of using it.
+## Before start
+### `Node` === `Node.js`
+
+Here will be described a few important advanced Node concepts. Before getting started, let's take a look at very base introduce to understand what Node is and what the purpose of using it.
 
 Node is a platform for creating server side application using javascript language. It was created as powerful system, which allows using all js concepts without any problems with performance.
 
